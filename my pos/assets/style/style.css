@@ -337,7 +337,6 @@ aside nav{
     display: flex;
     width: 100%;
     height: 100%;
-    /*background-color: white;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -348,13 +347,27 @@ aside nav{
     width: 60%;
     height: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*flex-flow: ;*/
+    overflow: scroll;
 }
 
 .cart-container{
-    width: 37%;
+    width: 38%;
     height: 100%;
     background-color: white;
 
+}
+
+/*item container*/
+.items-container>.items-bag{
+    width: 245px;
+    height: 245px;
+    background-color: #525252;
+    margin: 2px;
 }
 
 
