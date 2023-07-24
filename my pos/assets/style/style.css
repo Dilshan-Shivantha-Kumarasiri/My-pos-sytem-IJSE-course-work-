@@ -360,6 +360,7 @@ aside nav{
     width: 38%;
     height: 100%;
     background-color: white;
+    position: relative;
 
 }
 
@@ -413,8 +414,37 @@ aside nav{
 
 }
 
+.cart-container>div:nth-child(1){
+    background: linear-gradient(120deg, #FA8245,#F9794C,#F97451,#F96C59,#F56B58,#FA665A,#F8655E,#F95E62,#F95E62,#FB5964,#FA5A66,#FD566D,#F34A72);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    font-family: sans-serif;
+    color: white;
+}
+.cart-container>div:nth-child(1)>p{
+    margin-left: 10px;
+}
 
+.payBtn{
+    width: 100%;
+    height: 70px;
+    background: #4CAF50 !important;
+    position: absolute;
+    bottom: 0;
+    display: flex;
 
+}
+
+.cart-container>div:nth-child(2)>p{
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
 
 
 
