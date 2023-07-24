@@ -368,7 +368,15 @@ aside nav{
     height: 245px;
     background-color: #525252;
     margin: 2px;
+    position: relative;
 }
+.items-container>.items-bag>img{
+    width: 245px;
+    height: 245px;
+    /*background-color: #525252;*/
+    /*margin: 2px;*/
+}
+
 
 
 
