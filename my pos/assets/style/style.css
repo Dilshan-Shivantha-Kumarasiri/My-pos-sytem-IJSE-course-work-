@@ -306,7 +306,7 @@ aside nav{
     }
 }
 
-@media (max-width: 1000px) and (min-width: 400px){
+@media (max-width: 1000px) and (min-width: 0px){
     .home-container{
         display: none;
     }
@@ -446,6 +446,18 @@ aside nav{
 
 }
 
+/*cat*/
 
+.category-show{
+
+    display: flex;
+    position: absolute;
+    font-family: sans-serif;
+    top: 152px;
+    left: 240px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
 
 
