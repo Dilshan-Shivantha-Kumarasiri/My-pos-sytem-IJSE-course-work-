@@ -13,6 +13,8 @@ let snackBtn = document.querySelector(".option-container>div:nth-child(3)>a>div"
 let dessertBtn = document.querySelector(".option-container>div:nth-child(4)>a>div");
 let shopManageBtn = document.querySelector(".option-container>div:nth-child(5)>a>div");
 
+const customerContainer = document.getElementById("customerManagers");
+
 let btn;
 
 
@@ -36,6 +38,12 @@ function visibleMainDashBoardContainer(){
 
 }
 
+function nonVisibleCustomerContainer(){
+
+    customerContainer.style.setProperty("display","none");
+}
+
+
 foodBtn.addEventListener('click', (e) => {
 
     foodImage.setAttribute("src", "assets/img/food-tray-white.png")
@@ -56,6 +64,7 @@ foodBtn.addEventListener('click', (e) => {
     subShopManageContainer.style.setProperty("display","none");
 
     visibleMainDashBoardContainer();
+    nonVisibleCustomerContainer();
 });
 
 
@@ -78,7 +87,7 @@ drinkBtn.addEventListener('click', (e) => {
 });
 
 snackBtn.addEventListener('click', (e) => {
-    snackImage.setAttribute("src", "assets/img/snack-white.png")
+    snackImage.setAttribute("src", "assets/img/snack-white.png");
     setOptionBtnStyle(snackBtn);
     e.preventDefault();
 
@@ -95,7 +104,7 @@ snackBtn.addEventListener('click', (e) => {
 });
 
 dessertBtn.addEventListener('click', (e) => {
-    dessertImage.setAttribute("src", "assets/img/cupcake-white.png")
+    dessertImage.setAttribute("src", "assets/img/cupcake-white.png");
     setOptionBtnStyle(dessertBtn);
     e.preventDefault();
 
@@ -112,7 +121,7 @@ dessertBtn.addEventListener('click', (e) => {
 });
 
 shopManageBtn.addEventListener('click', (e) => {
-    shopManageImage.setAttribute("src", "assets/img/market-white.png")
+    shopManageImage.setAttribute("src", "assets/img/market-white.png");
     setOptionBtnStyle(shopManageBtn);
     e.preventDefault();
 
@@ -134,6 +143,9 @@ shopManageBtn.addEventListener('click', (e) => {
     activeCustomerLabel.style.setProperty("opacity", "100%");
     main.style.setProperty("display","none");
 
+    customerContainer.style.setProperty("display","flex");
+
+
 });
 
 // ----------------------------------------sub category -------------------------------
@@ -147,12 +159,15 @@ let pasta = document.querySelector(".foodSubCatContainer>a:nth-child(4)>div");
 
 window.onload = () => {
 
+    customerContainer.style.setProperty("display","none");
+
     foodSubChicken.style.setProperty("background", "rgba(255,255,255,0.3)");
     foodSubChicken.style.setProperty("opacity", "100%");
 
-    foodImage.setAttribute("src", "assets/img/food-tray-white.png")
+    foodImage.setAttribute("src", "assets/img/food-tray-white.png");
     setOptionBtnStyle(foodBtn);
     foodBtn.preventDefault();
+
 
 }
 let subBtn;
@@ -217,3 +232,4 @@ pasta.addEventListener('click', (e) => {
 function changeCustomerSubClass(){
 
 }
+
