@@ -14,7 +14,7 @@
 
     width: 100vw;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: #e9f5ff;
 
 }
 
@@ -71,6 +71,24 @@ aside nav{
 /*    color: white;*/
 /*}*/
 
+.shopManageSubCatContainer{
+    background: linear-gradient(#FA8245,#F9794C,#F97451,#F96C59,#F56B58,#FA665A,#F8655E,#F95E62,#F95E62,#FB5964,#FA5A66,#FD566D,#F34A72) ;
+    position: absolute;
+    margin-top: 30px;
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 350px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopManageSubCatContainer{
+    display: none;
+}
 
 .foodSubCatContainer{
     /*background-color: aqua;*/
@@ -118,9 +136,10 @@ aside nav{
     height: 100px;
     border-radius: 5px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 30px;
-    margin-left: 230px;
+    margin-left: 15%;
+    margin-right: 5%;
     display: flex;
     align-items: center;
     font-family: sans-serif;
@@ -276,6 +295,12 @@ aside nav{
     .topSearchBar>div:nth-child(5)>img{
         width: 30px;
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 1408px){
+    .topSearchBar{
+        margin-left: 230px;
     }
 }
 
@@ -457,7 +482,7 @@ aside nav{
     left: 240px;
     font-size: 13px;
     font-weight: bold;
-    a
+
 
 }
 

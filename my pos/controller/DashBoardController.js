@@ -30,6 +30,12 @@ function defaultBtnStyle(btn) {
     btn.style.setProperty("color", "#737373");
 }
 
+function visibleMainDashBoardContainer(){
+    const main = document.getElementById("main-home-container");
+    main.style.setProperty("display","flex");
+
+}
+
 foodBtn.addEventListener('click', (e) => {
 
     foodImage.setAttribute("src", "assets/img/food-tray-white.png")
@@ -45,6 +51,11 @@ foodBtn.addEventListener('click', (e) => {
     dessertImage.setAttribute("src", "assets/img/cupcake-gray.png");
     shopManageImage.setAttribute("src", "assets/img/market-gray.png");
 
+    const subShopManageContainer = document.getElementsByClassName("shopManageSubCatContainer")[0];
+
+    subShopManageContainer.style.setProperty("display","none");
+
+    visibleMainDashBoardContainer();
 });
 
 
@@ -62,6 +73,8 @@ drinkBtn.addEventListener('click', (e) => {
     dessertImage.setAttribute("src", "assets/img/cupcake-gray.png");
     shopManageImage.setAttribute("src", "assets/img/market-gray.png");
 
+    visibleMainDashBoardContainer();
+
 });
 
 snackBtn.addEventListener('click', (e) => {
@@ -77,6 +90,8 @@ snackBtn.addEventListener('click', (e) => {
     drinkImage.setAttribute("src", "assets/img/soda-gray.png");
     dessertImage.setAttribute("src", "assets/img/cupcake-gray.png");
     shopManageImage.setAttribute("src", "assets/img/market-gray.png");
+
+    visibleMainDashBoardContainer();
 });
 
 dessertBtn.addEventListener('click', (e) => {
@@ -92,6 +107,8 @@ dessertBtn.addEventListener('click', (e) => {
     drinkImage.setAttribute("src", "assets/img/soda-gray.png");
     snackImage.setAttribute("src", "assets/img/snack-gray.png");
     shopManageImage.setAttribute("src", "assets/img/market-gray.png");
+
+    visibleMainDashBoardContainer();
 });
 
 shopManageBtn.addEventListener('click', (e) => {
@@ -107,6 +124,15 @@ shopManageBtn.addEventListener('click', (e) => {
     drinkImage.setAttribute("src", "assets/img/soda-gray.png");
     snackImage.setAttribute("src", "assets/img/snack-gray.png");
     dessertImage.setAttribute("src", "assets/img/cupcake-gray.png");
+
+    const subShopManageContainer = document.getElementById("shopManageSubCatContainer");
+    const activeCustomerLabel = document.getElementById("active-customerManage");
+    const main = document.getElementById("main-home-container");
+
+    subShopManageContainer.style.setProperty("display","flex");
+    activeCustomerLabel.style.setProperty("background", "rgba(255,255,255,0.3)");
+    activeCustomerLabel.style.setProperty("opacity", "100%");
+    main.style.setProperty("display","none");
 
 });
 
@@ -127,7 +153,6 @@ window.onload = () => {
     foodImage.setAttribute("src", "assets/img/food-tray-white.png")
     setOptionBtnStyle(foodBtn);
     foodBtn.preventDefault();
-
 
 }
 let subBtn;
@@ -183,3 +208,12 @@ pasta.addEventListener('click', (e) => {
     defaultSub(seaFood);
 
 });
+
+//change customer manage sub category
+
+
+
+
+function changeCustomerSubClass(){
+
+}
