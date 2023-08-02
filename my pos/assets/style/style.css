@@ -499,6 +499,9 @@ aside nav{
 }
 
 /*customer manage*/
+/*----------------------------------------------------------------------------*/
+/*--------------------------       customer manage     -----------------------*/
+/*----------------------------------------------------------------------------*/
 
 /*left container*/
 #customerManagers{
@@ -510,6 +513,7 @@ aside nav{
     gap: 20px;
     position: relative;
 
+
 }
 
 
@@ -519,7 +523,7 @@ aside nav{
     height: 100%;
     display: flex;
     flex-direction: column;
-
+    border-radius:5px ;
 
     justify-content: center;
 }
@@ -576,5 +580,42 @@ aside nav{
 }
 
 /*right container*/
+
+.right-container{
+    display: flex;
+}
+.right-container>div{
+    margin: auto;
+}
+
+.right-container>div>table{
+    outline: 1px solid black;
+    height: 90%;
+
+}
+
+.right-container>div>table>thead{
+
+}
+
+.right-container>div>table>thead>tr>th{
+    outline: 2px solid black;
+    height: 50px;
+    padding: 0 5px 0 5px;
+}
+
+.right-container>div>table>tbody>tr>td{
+    outline: 2px solid black;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.right-container>div>table>tbody>tr{
+    height: 50px;
+}
+.right-container>div>table>tbody{
+    height: 50px;
+}
+
 
 
